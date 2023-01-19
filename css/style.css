@@ -1,0 +1,639 @@
+@font-face {
+    font-family: "OpenSans";
+    src:"https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff" ;
+}
+
+@media (max-width: 780px) {
+    html{
+        font-size: 14px;
+    }
+    .main {
+        width: 48.75rem;
+    }
+
+    .container__menu {
+        display: none;
+    }
+
+    .trends {
+        flex-wrap: wrap;
+        
+    }
+
+    .trend__card {
+        width: 49.7%;
+    }
+
+    .content {
+        width: 50rem;
+    }
+
+    .articles {
+        width: 392px;
+    }
+
+    article {
+        flex-wrap: wrap;
+        border-bottom: 2px solid rgb(231, 230, 230);
+        gap: 1rem;
+    }
+
+    .market {
+        width: 50rem;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+   
+}
+
+@media (min-width: 781px) {
+    .main {
+        width: 104rem;;
+    }
+
+    .container__menu {
+        display: flex;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .article__image {
+        margin-right: 1rem;
+    }
+
+    .articles {
+        width: 780px;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    .market {
+        width: 80%;
+    }
+
+}
+
+
+
+body {
+    margin: 0;  
+
+
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "OpenSans", sans-serif;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url(https://github.com/netology-code/fpymq-diploma/blob/master/sources/img/banner-bg.jpg?raw=true);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 4rem;
+    justify-content: space-around;
+
+}
+
+.intro__logo {
+    position: relative;
+    width: 30%;
+}
+
+.intro__logo__img {
+    width: 11.125rem;
+    height: 2.625rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container__menu {
+    position: relative;
+    box-sizing: content-box;
+    width: 60%;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 13px;
+}
+
+.menu {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    height: 40px;
+}
+
+.menu__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.menu__icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.intro {
+    position: relative;
+    font-weight: bolder;
+    line-height: 3rem;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.h1 {
+    font-size: 45px;
+    color: white;
+    line-height: 4.69rem;
+}
+
+.content__divider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4em;
+    justify-content: center;
+}
+
+.divider__title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+
+}
+
+.divider__line {
+    margin-top: 1em;
+    height: 0.2rem;
+    width: 4.125em;
+    border-width: 0;
+    background-color: rgba(225, 217, 189);
+
+}
+
+.trends {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;    
+}
+
+.trend__image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    z-index: 2;
+}
+
+.trend__card {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    background-color: beige;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+.trend__title {
+    box-sizing: border-box;
+    border: 0.3rem solid;
+    position: absolute;
+    border-color: rgba(181, 159, 91, 0.7);
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    padding: 10% 10%;
+    z-index: 3;
+}
+
+.tags {
+    display: flex;
+    padding: 0%;
+    gap: 1.25rem;
+    margin: 0%;
+}
+
+.tag {
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(181, 159, 91);
+    text-transform: uppercase;
+}
+
+.tag:hover {
+    text-decoration: underline;
+}
+
+.trend__title__text {
+    display: inline-block;
+    margin: 0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: white;
+
+}
+
+.trend__title__text:hover {
+    color: #b59f5b;
+}
+
+.content {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+article {
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+}
+
+.article__image {
+    width: 100%;
+}
+
+.article__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.article__title {
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.article__name {
+    display: block;
+    font-family: inherit;
+    margin: 0.5em 0 0.5rem;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.article__name:hover {
+    color: #b59f5b;
+}
+
+.date {
+    color: gray;
+    font-size: 0.75rem;
+}
+
+.author {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+.article__text {
+    align-self: flex-start;
+    font-size: 0.94rem;
+
+}
+
+aside {
+    font-size: 0.7rem;
+    width: 272px;
+
+
+}
+
+.new__articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside__article {
+    display: flex;
+}
+
+.aside__image {
+    height: 70px;
+    width: 70px;
+    margin-right: 1rem;
+}
+
+
+.tag__links__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding-left: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.links__item__style {
+    font-size: 1.25em;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0.3rem solid;
+    padding: 0.5em 1em;
+    border-color: lightgray;
+
+}
+
+.links__item {
+    text-decoration: none;
+
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.category__divider {
+    background-color: rgba(238, 238, 238);
+    border-width: 0;
+    height: 0.1em;
+
+}
+
+.counter {
+    color: rgba(181, 159, 91);
+    vertical-align: super;
+    font-size: 0.8em;
+    margin-left: 0.3em;
+}
+
+.search__form {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.search__box {
+    width: 81%;
+    background-color: rgba(244, 247, 246);
+    border: 0;
+    padding-left: 1rem;
+}
+
+.search__box::placeholder {
+    font-size: 1rem;
+}
+
+.search__box:active {
+    border: 1px solid blue;
+}
+
+.search__btn {
+    width: 18%;
+    height: 3rem;
+    position: relative;
+    background-color: #b59f5b;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: center center;
+}
+
+.search__btn:hover {
+    border: 0.3rem solid;
+    border-color: #b3974b;
+}
+
+.subscription__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.subscription__box {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(244, 247, 246);
+    border: 0;
+    padding-left: 1rem;
+}
+
+.subscription__box::placeholder {
+    font-size: 1rem;
+}
+
+.subscription__btn {
+    width: 100%;
+    height: 4.2em;
+    position: relative;
+    background-color: #b59f5b;
+    background-size: 1.25rem;
+    background-position: center center;
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.subscription__btn:hover {
+    border: solid;
+    border-width: 2px;
+    border-color: #b3974b;
+} 
+
+
+.market {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem auto 4rem auto;
+    font-size: 1rem;
+}
+
+
+.products {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 21.5rem;
+}
+
+.product__title {
+    font-family: inherit;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.product__info {
+    position: relative;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 2rem 1.25rem 0rem;
+    border-color: #b59f5b;
+    width: 21.5rem;
+    height: 16.5rem;
+    bottom: 1.875rem;
+
+}
+
+.product__hero{
+    height: 12.75rem;
+    width: 18.75rem;
+}
+
+.purchase__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.6rem;
+    height: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.purchase__btn {
+    display: flex;
+    box-sizing: border-box;
+    width: 8.75rem;
+    height: 3rem;
+    background-color: #b59f5b;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase__btn:hover {
+    border: solid;
+    border-width: 2px;
+    border-color: #b3974b;
+
+}
+
+.purchase__btn__text {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.purchase__prices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 4rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.purchase__description {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+.product__old__price {
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.product__price {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5.25rem;
+    background-color: rgba(244, 247, 246);
+}
+
+.social__logos {
+    display: flex;
+    gap: 2rem;
+}
+
+.social__logo {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.125rem;
+    color: gray;
+}
